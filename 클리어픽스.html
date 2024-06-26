@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클리어픽스</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ol,
+        ul,
+        li {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .list1 {}
+
+        .list1 li {
+            float: left;
+        }
+
+        .list1 li a {
+            display: block;
+            padding: 20px;
+            background-color: lightskyblue;
+        }
+
+        .clear_fix::before,
+        .clear_fix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box1 {
+            background-color: lightgreen;
+            width: 300px;
+            float: left;
+        }
+
+        .box2 {
+            width: 500px;
+            height: 100px;
+            background-color: lightseagreen;
+            float: left;
+        }
+
+        .box3{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list1 clear_fix">
+        <li><a href="#">1234567</a></li>
+        <li><a href="#">1234567</a></li>
+        <li><a href="#">1234567</a></li>
+        <li><a href="#">1234567</a></li>
+        <li><a href="#">1234567</a></li>
+        <li><a href="#">1234567</a></li>
+    </ul>
+
+    <div class="box1">가나다라마바사아자차카타파하</div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dignissimos sit nulla tempora maiores animi
+        distinctio, dolores, tenetur, eveniet quibusdam accusamus? Natus, modi ipsam. Qui suscipit recusandae autem
+        doloribus facilis!
+    </div>
+
+    <div class="box3 clear_fix">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint dolorum modi minima molestiae incidunt?
+        Doloribus atque, dignissimos praesentium incidunt ipsam ratione corrupti quod iure dolorem vel, reprehenderit
+        vitae libero?
+    </div>
+</body>
+
+</html>

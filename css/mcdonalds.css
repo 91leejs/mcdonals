@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+#wrap{
+    height: 100%;
+}
+
+/* header 영역 */
+
+.header{
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+}
+
+.head_inner{
+    width: 1168px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    width: 106px;
+    height: 93px;
+    margin-top: 23px;
+}
+
+.logo a{}
+
+.nav{
+    float: left;
+    margin-left: 70px;
+}
+
+.main{}
+
+.main > li{
+    display: inline-block;
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    height: 140px;
+    line-height: 140px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 90px;
+}
+
+.main > li:hover > a{
+    border-bottom: 3px solid gold;
+}
+
+.header:hover .sub{
+    display: block;
+}
+
+.header:hover .sub_bg{
+    display: block;
+}
+
+.sub_bg{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    border-top: 1px solid #999;
+    z-index: 4;
+    display: none;
+}
+
+.sub{
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    display: none;
+    z-index: 5;
+}
+
+.sub > li{}
+
+.sub > li > a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 20px;
+}
+
+.sub > li > a:hover{
+    text-decoration: underline;
+}
+
+.util{
+    float: right;
+    line-height: 140px;
+}
+
+.util li{
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 40px;
+}
+
+.util li a{
+    display: block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.util_1{
+    background-color: #d90007;
+}
+
+.util_2{
+    background-color: #d97e01;
+}
+
+.util_3{
+    background-color: #254a38;
+    margin-right: 20px;
+}
+
+.util_4{
+    width: 36px;
+    height: 36px;
+    background: url('../img/ico_search.png')no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    text-indent: -9999px;
+}
+
+/* slide 영역 */
+.slide{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.slide a{}
+
+.slide a img{
+    height: 540px;
+    margin-top: 140px;
+}
+
+.container{
+    width: 1168px;
+    height: 1181px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0 50px 0;
+}
+
+.con_list{}
+
+.con_list li{
+    width: 366px;
+    height: 438px;
+    float: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    margin-bottom: 35px;
+
+}
+
+.mid{
+    margin: 0 35px;
+}
+
+.con_list li a{
+    display: block;
+    width: 366px;
+    height: 438px;
+}
+
+.con_list li a .list_img{
+    width: 366px;
+    height: 300px;
+}
+
+.con_list li a h4{
+    padding: 30px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.plus{
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url('../img/btn_more.png');
+    clear: both;
+    position: relative;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer{
+    background-color: #333;
+    height: 260px;
+}
+
+.footer_con{
+    width: 1168px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.foot_1{
+    color: white;
+    float: left;
+}
+
+.f_list1 li:first-child{
+    color: gold;
+}
+
+.f_list1 li{
+    margin-bottom: 15px;
+}
+
+.f_list1 li a{
+    display: block;
+}
+
+.foot_2{
+    color: #999;
+    float: left;
+    margin-left: 80px;
+}
+
+.f_list2{
+    
+}
+
+.f_list2 li{
+    margin-bottom: 15px;
+}
+
+.f_list2 li a{
+    display: block;
+}
+
+.foot_img{
+    float: right;
+    overflow: hidden;
+}
+
+.foot_img a{
+    float: left;
+    margin: 0 10px;
+}
+
+.f_img1{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/ico_sns.png');
+    background-size: cover;
+}
+
+.f_img2{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/ico_sns.png');
+    background-position-y: -40px;
+
+}
+
+.f_img3{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/ico_sns.png');
+    background-position-y: -80px;
+
+}
+
+.f_img4{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/ico_sns.png');
+    background-position-y: -120px;
+
+}
+
+.f_img5{
+    display: block;
+    width: 100px;
+    height: 72px;
+    background: url('../img/국가공인\ 정보통신접근성\ 품질인증마크.png') no-repeat center;
+    background-size: cover;
+}
